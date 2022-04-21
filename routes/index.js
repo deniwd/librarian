@@ -4,9 +4,7 @@ const router = Router()
 const BookRoute = require('./book')
 
 router.get('/', (reg, res) => {
-    res.json({
-        home
-    })
+    res.render('index.ejs', { message: "Test page" })
 })
 
 
